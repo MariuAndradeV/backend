@@ -5,7 +5,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Windmill Dashboard</title>
+    <title>         {% block title %} 
+
+      Windmill Dashboard
+   
+      {% endblock %} 
+
+</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -587,12 +593,14 @@
       
 
       <!-- START - Block content -->
+     <!-- START - Block content -->
+     {% block content %}
 
-        <div class="flex items-center justify-center h-screen bg-gray-100 w-full">
-            <div class="p-6 bg-white shadow-md rounded">
-                Block content
-            </div>
-        </div>
+     <div> ... </div>
+
+     {% endblock %}
+     <!-- END - Block content -->
+
 
         <!-- END - Block content -->
 
