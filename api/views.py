@@ -47,7 +47,7 @@ class LandingAPI(APIView):
 class LandingAPIDetail(APIView):
     name = 'Landing Detail API'
 
-    collection_name = 'data'
+    collection_name = 'usuarios'
 
     def get(self, request, pk):
         ref = db.reference(f'{self.collection_name}')
